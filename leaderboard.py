@@ -1,11 +1,27 @@
 # find the ranking on leader board
 import sys
+def getboard1(scores,newscores):
+    
+ results=[]
 
-def Leaderboard(scores, alice):
+    scores=list(set(scores))
+    scores.sort(reverse=True)
+    idx=0
+    for a in newscores:
+        idx=0
+        for x in range(0,len(scores)):
+            if a < scores[x] :
+                idx+=1
+        scores.insert(idx,a)
+        results.append(idx+1)
+    return results
+
+
+def getboard(scores, newscores):
     board={}
     results=[]
     
-    for a in alice:
+    for a in newscores:
         idx=0
         for x in range(0,len(scores)):
             if a < scores[x]:
@@ -29,3 +45,7 @@ def Leaderboard(scores, alice):
         results.append(board[a])
         board={}
     return results
+
+or
+
+
