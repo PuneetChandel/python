@@ -1,3 +1,4 @@
+#Diagonal diff ina 2d array
 #!/bin/python3
 
 
@@ -14,12 +15,4 @@ def diagonalDifference(a):
     sum = abs(sum1-sum2)
     
     return sum
-    
-if __name__ == "__main__":
-    n = int(input().strip())
-    a = []
-    for a_i in range(n):
-       a_t = [int(a_temp) for a_temp in input().strip().split(' ')]
-       a.append(a_t)
-    result = diagonalDifference(a)
-    print(result)
+
