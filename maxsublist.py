@@ -3,7 +3,7 @@
 
 import sys
 
-def pickingNumbers(a):
+def chooseNumbers(a):
     arr1=[]
     result=[]
     a.sort()    
@@ -20,8 +20,3 @@ def pickingNumbers(a):
             result=arr1
         arr1=[]
     return len(result)    
-if __name__ == "__main__":
-    n = int(input().strip())
-    a = list(map(int, input().strip().split(' ')))
-    result = pickingNumbers(a)
-    print(result)
