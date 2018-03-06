@@ -1,9 +1,9 @@
 # find the ranking on leader board
 import sys
-def getboard1(scores,newscores):
-    
- results=[]
 
+
+def getboard1(scores,newscores):    
+ results=[]
     scores=list(set(scores))
     scores.sort(reverse=True)
     idx=0
@@ -46,6 +46,5 @@ def getboard(scores, newscores):
         board={}
     return results
 
-or
 
 
